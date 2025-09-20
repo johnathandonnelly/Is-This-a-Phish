@@ -1,0 +1,52 @@
+{
+    "tutorial": [
+        {
+            "id": "T1",
+            "lessonTitle": "Lesson Title 1",
+            "lessonNumber": "Tutorial - 1",
+            "title": "Email Title",
+            "senderName": "Tutorial 1",
+            "senderEmail": "tutorial1@phish.com",
+            "body": "Hello,<br><br>This is Tutorial 1.<br><br>Bye!",
+            "userDescription": "Who you are.",
+            "companyDescription": "Who you are working for.",
+            "correctAnswer": "Phish",
+            "hint": "This is a hint for tutorial 1",
+            "answer": "This is the answer for tutorial 1",
+            "next": "T2"
+        },
+        {
+            "id": "T2",
+            "lessonTitle": "Lesson Title 2",
+            "lessonNumber": "Tutorial - 2",
+            "title": "Email Title",
+            "senderName": "Tutorial 2",
+            "senderEmail": "tutorial2@phish.com",
+            "body": "Hello,<br><br>This is Tutorial 2.<br><br>Bye!",
+            "userDescription": "Who you are.",
+            "companyDescription": "Who you are working for.",
+            "correctAnswer": "Phish",
+            "hint": "This is a hint for tutorial 2",
+            "answer": "This is the answer for tutorial 2",
+            "prerequisite": "T1",
+            "next": "B1"
+        }
+    ],
+    "beginner": [
+        {
+            "id": "B1",
+            "lessonTitle": "Beginner 1 Title",
+            "lessonNumber": "Beginner - 1",
+            "title": "This is beginner - 1",
+            "senderName": "Beginner 1",
+            "senderEmail": "beginner1@phish.com",
+            "body": "Hello,<br><br>This is Beginner 1.<br><br>Bye!",
+            "userDescription": "You are working on beginner 1!",
+            "companyDescription": "You are working FOR beginner 1!",
+            "correctAnswer": "Legit",
+            "hint": "this is the hint for beginner 1",
+            "answer": "ANSWER FOR BEGINNER 1",
+            "prerequisite": "T2"
+        }
+    ]
+}

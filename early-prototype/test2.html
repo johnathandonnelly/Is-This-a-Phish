@@ -1,0 +1,55 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Is This a Phish? | Lessons</title>
+    <link rel="stylesheet" href="test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="website-title"><a href="test2.html">Is This a Phish?</a></h1>
+        <ul>
+            <li><a href="test2.html">Home</a></li>
+            <li><a href="test2.html">Learn</a></li>
+            <li><a href="test2.html">Challenge</a></li>
+            <li><a href="test3.html">Settings</a></li>
+        </ul>
+    </header>
+
+    <a href="test.html?lesson=T1" data-lesson-id="T1">Tutorial 1</a>
+    <a href="test.html?lesson=T2" data-lesson-id="T2">Tutorial 2</a>
+    <a href="test.html?lesson=B1" data-lesson-id="B1">Beginner 1</a>
+</body>
+
+<style>
+    .locked {
+  pointer-events: none; /* disables clicks */
+  color: gray;
+  opacity: 0.5;
+  cursor: default;
+}
+
+</style>
+
+<script>
+    fetch('test.json')
+  .then(res => res.json())
+  .then(data => {
+    const completed = JSON.parse(localStorage.getItem('completedLessons') || '[]');
+    
+    // For each lesson in your categories
+    Object.keys(data).forEach(category => {
+      data[category].forEach(lesson => {
+        const link = document.querySelector(`a[data-lesson-id="${lesson.id}"]`);
+        if (lesson.prerequisite && !completed.includes(lesson.prerequisite)) {
+          // Disable or style link as locked
+          if (link) {
+            link.classList.add('locked');
+            link.href = '#'; // Disable navigation
+            link.title = `Complete lesson ${lesson.prerequisite} first`;
+          }
+        }
+      });
+    });
+  });
+</script>

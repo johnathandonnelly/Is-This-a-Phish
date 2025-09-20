@@ -1,0 +1,143 @@
+:root {
+    --background-color: #2F4858;
+    --primary-color: #F9BB1E;
+    --text-color: #f0f0f0;
+}
+
+/* Global */
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Figtree;
+}
+
+button {
+    background-color: var(--text-color);
+    border: none;
+    color: var(--background-color);
+    font-family: inherit;
+    font-weight: bold;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: var(--primary-color);
+}
+
+button:disabled {
+    background-color: black;
+    color: var(--text-color);
+}
+
+/* Classes */
+
+.title {
+    color: var(--primary-color);
+}
+
+.center-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.locked {
+    pointer-events: none;
+}
+
+/* Navigation Bar */
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#website-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Home */
+
+#home {
+    height: 90vh;
+}
+
+/* Lesson: Email */
+
+#lesson {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+#email {
+    flex: 7;
+}
+
+#email-title {
+    font-weight: bold;
+}
+
+#email-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#email-info p {
+    margin: 0;
+}
+
+#email-info p:first-child {
+    font-weight: bold;
+}
+
+/* Lesson: Information */
+
+#info {
+    flex: 3;
+}
+
+#info-intro {
+    text-align: center;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#result-message {
+    font-weight: bold;
+}
+
+#next-btn {
+    display: none;
+}
