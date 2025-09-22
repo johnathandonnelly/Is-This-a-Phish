@@ -5,41 +5,48 @@
     <meta charset="UTF-8">
     <title>Settings</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../assets/icon.ico">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <a id="website-title" href="../index.html">Is This a Phish?</a>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="learn.html">Learn</a></li>
-            <li><a href="settings.html">Settings</a></li>
-        </ul>
-    </header>
+    <div class="page-wrapper">
+        <header>
+            <a id="website-title" href="../index.html">Is This a Phish?</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a class="active-page" href="settings.html">Settings</a></li>
+            </ul>
+        </header>
 
-    <main>
-        <div class="center-content">
-            <h1 class="title">Settings</h1>
-            <div class="center-content">
-                <h2>Export / Import</h2>
-                <p>Keep your progress across different browsers.</p>
-                <div>
-                    <button id="export-progress-btn">Export Progress</button>
-                    <button id="import-progress-btn">Import Progress</button>
-                    <input type="file" id="import-file-input" accept="application/json" style="display:none" />
+        <main>
+            <div id="settings-page" class="center-content">
+                <h1 class="title">Settings</h1>
+                <div class="center-content">
+                    <h2>Export / Import</h2>
+                    <p>Keep your progress across different browsers.</p>
+                    <div>
+                        <button id="export-progress-btn">Export Progress</button>
+                        <button id="import-progress-btn">Import Progress</button>
+                        <input type="file" id="import-file-input" accept="application/json" style="display:none" />
+                    </div>
+                </div>
+                <div class="center-content">
+                    <h2>Clear Local Storage</h2>
+                    <p>Clear all saved progress and data.</p>
+                    <button id="clear-storage-btn">Clear Local Storage</button>
                 </div>
             </div>
-            <div class="center-content">
-                <h2>Clear Local Storage</h2>
-                <p>Clear all saved progress and data.</p>
-                <button id="clear-storage-btn">Clear Local Storage</button>
-            </div>
-        </div>
-    </main>
+        </main>
 
-    <script src="settings.js"></script>
+        <footer class="center-content">
+            &copy; 2025 Johnathan Donnelly
+        </footer>
+
+        <script src="settings.js"></script>
+    </div>
 </body>
 
 </html>

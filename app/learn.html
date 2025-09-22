@@ -5,40 +5,47 @@
     <meta charset="UTF-8">
     <title>Learn</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../assets/icon.ico">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <a id="website-title" href="../index.html">Is This a Phish?</a>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="learn.html">Learn</a></li>
-            <li><a href="settings.html">Settings</a></li>
-        </ul>
-    </header>
+    <div class="page-wrapper">
+        <header>
+            <a id="website-title" href="../index.html">Is This a Phish?</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active-page" href="learn.html">Learn</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </header>
 
-    <main>
-        <div class="center-content">
-            <h1 class="title">Learn</h1>
-            <div class="center-content">
-                <h2>Tutorial</h2>
-                <div>
-                    <button onclick="window.location.href='lesson.html?lesson=T1'" data-lesson-id="T1">Tutorial - 1</button>
-                    <button onclick="window.location.href='lesson.html?lesson=T2'" data-lesson-id="T2">Tutorial - 2</button>
+        <main>
+            <div id="learn-page" class="center-content">
+                <h1 class="title">Learn</h1>
+                <div class="center-content">
+                    <h2>Tutorial</h2>
+                    <div>
+                        <button onclick="window.location.href='lesson.html?lesson=T1'" data-lesson-id="T1">Tutorial - 1</button>
+                        <button onclick="window.location.href='lesson.html?lesson=T2'" data-lesson-id="T2">Tutorial - 2</button>
+                    </div>
+                </div>
+                <div class="center-content">
+                    <h2>Beginner</h2>
+                    <div>
+                        <button onclick="window.location.href='lesson.html?lesson=B1'" data-lesson-id="B1">Beginner - 1</button>
+                    </div>
                 </div>
             </div>
-            <div class="center-content">
-                <h2>Beginner</h2>
-                <div>
-                    <button onclick="window.location.href='lesson.html?lesson=B1'" data-lesson-id="B1">Beginner - 1</button>
-                </div>
-            </div>
-        </div>
-    </main>
+        </main>
 
-    <script src="learn.js"></script>
+        <footer class="center-content">
+            &copy; 2025 Johnathan Donnelly
+        </footer>
+
+        <script src="learn.js"></script>
+    </div>
 </body>
 
 </html>

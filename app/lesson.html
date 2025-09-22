@@ -5,58 +5,65 @@
     <meta charset="UTF-8">
     <title>Lesson</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../assets/icon.ico">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <a id="website-title" href="../index.html">Is This a Phish?</a>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="learn.html">Learn</a></li>
-            <li><a href="settings.html">Settings</a></li>
-        </ul>
-    </header>
+    <div class="page-wrapper">
+        <header>
+            <a id="website-title" href="../index.html">Is This a Phish?</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active-page" href="learn.html">Learn</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </header>
 
-    <main id="lesson">
-        <div id="email">
-            <div id="email-title">
-                <p>Email Title</p>
+        <main id="lesson">
+            <div id="email">
+                <div id="email-title">
+                    <p>Email Title</p>
+                </div>
+                <div id="email-info">
+                    <p>First Last</p>
+                    <p>first.last@email.com</p>
+                </div>
+                <div id="email-content">
+                    <p>Hello,<br><br>
+                    You're not supposed to see this.<br><br>
+                    Thanks!</p>
+                </div>
             </div>
-            <div id="email-info">
-                <p>First Last</p>
-                <p>first.last@email.com</p>
+            <div id="info">
+                <div id="info-intro">
+                    <p id="lesson-number">Lesson - #</p>
+                    <h1 id="lesson-title">Lesson Title</h1>
+                </div>
+                <div id="info-background">
+                    <h2>You</h2>
+                    <p id="user-description">Who you are.</p>
+                    <h2>Company</h2>
+                    <p id="company-description">Who your company is.</p>
+                </div>
+                <div id="buttons">
+                    <button id="phish-btn">Phish</button>
+                    <button id="legit-btn">Legit</button>
+                    <button id="hint-btn">Hint</button>
+                    <button id="answer-btn">Answer</button>
+                </div>
+                <div id="result-message"></div>
+                <button id="next-btn">Next Lesson</button>
             </div>
-            <div id="email-content">
-                <p>Hello,<br><br>
-                You're not supposed to see this.<br><br>
-                Thanks!</p>
-            </div>
-        </div>
-        <div id="info">
-            <div id="info-intro">
-                <p id="lesson-number">Lesson - #</p>
-                <h1 id="lesson-title">Lesson Title</h1>
-            </div>
-            <div id="info-background">
-                <h2>You</h2>
-                <p id="user-description">Who you are.</p>
-                <h2>Company</h2>
-                <p id="company-description">Who your company is.</p>
-            </div>
-            <div id="buttons">
-                <button id="phish-btn">Phish</button>
-                <button id="legit-btn">Legit</button>
-                <button id="hint-btn">Hint</button>
-                <button id="answer-btn">Answer</button>
-            </div>
-            <div id="result-message"></div>
-            <button id="next-btn">Next Lesson</button>
-        </div>
-    </main>
+        </main>
 
-    <script src="lesson.js"></script>
+        <footer class="center-content">
+            &copy; 2025 Johnathan Donnelly
+        </footer>
+
+        <script src="lesson.js"></script>
+    </div>
 </body>
 
 </html>

@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.2] - 2025-09-22
+
+### Added
+
+* Navigation hover effects
+* Temporary favicon
+* Footer
+
+### Changed
+
+* Spacing between elements
+* README home page image
+
 ## [0.0.1] - 2025-09-20
 
 ### Added

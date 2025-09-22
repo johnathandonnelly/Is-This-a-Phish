@@ -5,29 +5,36 @@
     <meta charset="UTF-8">
     <title>Is This a Phish?</title>
     <link rel="stylesheet" href="app/styles.css">
+    <link rel="icon" href="assets/icon.ico">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <a id="website-title" href="index.html">Is This a Phish?</a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="app/learn.html">Learn</a></li>
-            <li><a href="app/settings.html">Settings</a></li>
-        </ul>
-    </header>
+    <div class="page-wrapper">
+        <header>
+            <a id="website-title" href="index.html">Is This a Phish?</a>
+            <ul>
+                <li><a class="active-page" href="index.html">Home</a></li>
+                <li><a href="app/learn.html">Learn</a></li>
+                <li><a href="app/settings.html">Settings</a></li>
+            </ul>
+        </header>
 
-    <main>
-        <div id="home" class="center-content">
-            <h1 class="title">Is This a Phish?</h1>
-            <p>Learn and practice spotting phishing emails.</p>
-            <a href="app/learn.html">
-                <button>Learn</button>
-            </a>
-        </div>
-    </main>
+        <main>
+            <div id="home" class="center-content">
+                <h1 class="title">Is This a Phish?</h1>
+                <p>Learn and practice spotting phishing emails.</p>
+                <a href="app/learn.html">
+                    <button>Learn</button>
+                </a>
+            </div>
+        </main>
+
+        <footer class="center-content">
+            &copy; 2025 Johnathan Donnelly
+        </footer>
+    </div>
 </body>
 
 </html>

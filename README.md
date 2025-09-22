@@ -12,7 +12,7 @@ Designed to teach users how to identify phishing attacks through hands-on practi
 
 ## 📸 Screenshots
 
-![Home Page](home.png)
+![Home Page](assets/home.png)
 
 ## 💡 Why I Built This
 

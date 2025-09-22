@@ -10,6 +10,8 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: Figtree;
+    height: 100%;
+    margin: 0;
 }
 
 button {
@@ -48,6 +50,16 @@ button:disabled {
     pointer-events: none;
 }
 
+.active-page {
+    color: var(--primary-color)
+}
+
+.page-wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
 /* Navigation Bar */
 
 header {
@@ -82,10 +94,40 @@ ul li a {
     text-decoration: none;
 }
 
+ul li a:hover {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+/* Footer */
+
+footer {
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
 /* Home */
 
 #home {
-    height: 90vh;
+    height: 85vh;
+}
+
+#home h1 {
+    margin-bottom: 10px;
+}
+
+#home p {
+    margin-top: 0px;
+}
+
+#home button {
+    margin-top: 30px;
+}
+
+/* Learn */
+
+#learn-page button {
+    margin-bottom: 20px;
 }
 
 /* Lesson: Email */
@@ -101,12 +143,13 @@ ul li a {
 }
 
 #email-title {
+    font-size: 24px;
     font-weight: bold;
 }
 
 #email-info {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 10px;
 }
 
@@ -116,6 +159,10 @@ ul li a {
 
 #email-info p:first-child {
     font-weight: bold;
+}
+
+#email-content {
+    margin-top: 50px;
 }
 
 /* Lesson: Information */
@@ -128,6 +175,14 @@ ul li a {
     text-align: center;
 }
 
+#lesson-number {
+    margin-bottom: 0px;
+}
+
+#lesson-title {
+    margin-top: 2px;
+}
+
 #buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -136,8 +191,25 @@ ul li a {
 
 #result-message {
     font-weight: bold;
+    margin: 10px;
 }
 
 #next-btn {
     display: none;
+    margin: 10px;
+}
+
+/* Settings */
+
+#settings-page h2 {
+    margin-bottom: 10px;
+}
+
+#settings-page p {
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+#settings-page button {
+    margin-bottom: 20px;
 }
