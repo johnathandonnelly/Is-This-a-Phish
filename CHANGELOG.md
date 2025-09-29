@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.4] - 2025-##-##
+
+### Added
+
+* Progress bar
+
+### Changed
+
+* Email styling
+* Navigation hover and active backgrounds
+* Rounded buttons
+* README and screenshot
+
 ## [0.0.3] - 2025-09-25
 
 ### Changed

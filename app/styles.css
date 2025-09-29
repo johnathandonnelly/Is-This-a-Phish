@@ -22,6 +22,7 @@ button {
     font-weight: bold;
     padding: 15px 30px;
     transition: background-color 0.3s ease;
+    border-radius: 6px;
 }
 
 button:hover:not(:disabled) {
@@ -51,7 +52,8 @@ button:disabled {
 }
 
 .active-page {
-    color: var(--primary-color)
+    background-color: var(--primary-color);
+    color: var(--background-color)
 }
 
 .page-wrapper {
@@ -92,11 +94,16 @@ ul li a {
     color: inherit;
     display: inline-block;
     text-decoration: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3 ease;
+    font-weight: bold;
 }
 
 ul li a:hover {
     color: var(--primary-color);
     transition: color 0.3s ease;
+    background-color: rgba(249, 187, 30, 0.2);
 }
 
 /* Footer */
@@ -130,6 +137,34 @@ footer {
     margin-bottom: 20px;
 }
 
+#progress {
+    width: 80%;
+    background-color: #000000;
+    border-radius: 10px;
+    margin: 20px auto;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: var(--primary-color);
+    transition: width 0.5s ease;
+    color: var(--background-color);
+}
+
+#progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+
 /* Lesson: Email */
 
 #lesson {
@@ -140,17 +175,30 @@ footer {
 
 #email {
     flex: 7;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,1);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px;
 }
 
 #email-title {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: normal;
+    margin: 0 0 12px 0;
+    /*border-bottom: 1px solid #ddd;
+    margin-bottom: 8px;
+    padding-bottom: 4px;*/
 }
 
 #email-info {
     align-items: center;
     display: flex;
     gap: 10px;
+    color: #555;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 #email-info p {
@@ -162,7 +210,9 @@ footer {
 }
 
 #email-content {
-    margin-top: 50px;
+    padding-top: 10px;
+    /*margin-top: 0px;*/
+    line-height: 1.6;
 }
 
 /* Lesson: Information */

@@ -21,4 +21,23 @@ fetch('lesson.json')
                 }
             });
         });
+
+        let totalLessons = 0;
+        Object.keys(data).forEach(category => {
+            totalLessons += data[category].length;
+        });
+        const completedCount = completed.length;
+
+        const bar = document.getElementById("progress-bar");
+        const percent = Math.round((completedCount / totalLessons) * 100);
+        bar.style.width = percent + "%";
+
+        const text = document.getElementById("progress-text");
+        text.textContent = `${percent}%`;
+
+        if (percent > 5) {
+            text.style.color = "#000";
+        } else {
+            text.style.color = "#FFF"
+        }
     });
