@@ -1,6 +1,16 @@
 # Changelog
 
-## [0.0.4] - 2025-##-##
+## [0.0.5] - 2025-10-03
+
+### Added
+* Detailed lesson plans in [CONCEPT.md](/CONCEPT.md)
+
+### Changed
+
+* License: MIT -> Apache 2.0, with notice
+* 0.0.4 changelog date
+
+## [0.0.4] - 2025-09-29
 
 ### Added
 

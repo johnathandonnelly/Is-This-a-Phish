@@ -35,7 +35,7 @@ fetch('lesson.json')
         const text = document.getElementById("progress-text");
         text.textContent = `${percent}%`;
 
-        if (percent > 5) {
+        if (percent > 3) {
             text.style.color = "#000";
         } else {
             text.style.color = "#FFF"

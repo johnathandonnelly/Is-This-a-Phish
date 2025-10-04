@@ -46,4 +46,14 @@ I wanted to create a practical, accessible tool to help people build confidence 
 
 ## 📜 License
 
-MIT License © Johnathan Donnelly 2025
+### Apache License 2.0 (for version 0.0.5+)
+
+© 2025 Johnathan Donnelly
+
+Licensed under the Apache License, Version 2.0.
+
+### MIT License (for version 0.0.1-4)
+
+© 2025 Johnathan Donnelly
+
+Licensed under the MIT License.
