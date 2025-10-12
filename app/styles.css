@@ -1,7 +1,75 @@
 :root {
     --background-color: #2F4858;
     --primary-color: #F9BB1E;
+    --primary-color-transparent: rgba(249, 187, 30, 0.2);
     --text-color: #f0f0f0;
+    --bar-background: #000000;
+    --email-background-color: #ffffff;
+    --email-text-color: #000000;
+    --email-info-color: #555;
+    --email-shadow: rgba(0,0,0,1);
+    --button-inside-shadow: rgba(0,0,0,0.3);
+}
+
+.theme-default {
+    --background-color: #2F4858;
+    --primary-color: #F9BB1E;
+    --primary-color-transparent: rgba(249, 187, 30, 0.2);
+    --text-color: #f0f0f0;
+
+    --bar-background: #000000;
+    --email-background-color: #ffffff;
+    --email-text-color: #000000;
+    --email-info-color: #555;
+    --email-shadow: rgba(0,0,0,1);
+    --button-inside-shadow: rgba(0,0,0,0.3);
+}
+
+.theme-light {
+    --background-color: #f0f0f0;
+    --primary-color: #bf8e12;
+    --primary-color-transparent: rgba(191, 142, 18, 0.2);
+    --text-color: #151515;
+
+    --bar-background: #000000;
+    --email-background-color: #ffffff;
+    --email-text-color: #000000;
+    --email-info-color: #555;
+    --email-shadow: rgba(0,0,0,1);
+    --button-inside-shadow: rgba(255,255,255,0.3);
+}
+
+.theme-dark {
+    --background-color: #151515;
+    --primary-color: #F9BB1E;
+    --primary-color-transparent: rgba(249, 187, 30, 0.2);
+    --text-color: #f0f0f0;
+
+    --bar-background: #000000;
+    --email-background-color: #000000;
+    --email-text-color: #ffffff;
+    --email-info-color: #898989;
+    --email-shadow: rgba(255,255,255,0.2);
+    --button-inside-shadow: rgba(0,0,0,0.3);
+}
+
+.theme-midnight {
+    --background-color: #000000;
+    --primary-color: #F9BB1E;
+    --primary-color-transparent: rgba(249, 187, 30, 0.2);
+    --text-color: #f0f0f0;
+
+    --bar-background: #000000;
+    --email-background-color: #000000;
+    --email-text-color: #ffffff;
+    --email-info-color: #898989;
+    --email-shadow: rgba(101, 101, 101, 0.0);
+    --button-inside-shadow: rgba(0,0,0,0.3);
+}
+
+#theme-buttons button.active {
+    background-color: var(--primary-color);
+    color: var(--background-color);
 }
 
 /* Global */
@@ -27,11 +95,16 @@ button {
 
 button:hover:not(:disabled) {
     background-color: var(--primary-color);
+    box-shadow: inset 0 0 10px var(--button-inside-shadow);
 }
 
 button:disabled {
     background-color: black;
     color: var(--text-color);
+}
+
+button.completed {
+    background-color: var(--primary-color);
 }
 
 /* Classes */
@@ -100,10 +173,10 @@ ul li a {
     font-weight: bold;
 }
 
-ul li a:hover {
+ul li a:not(.active-page):hover {
     color: var(--primary-color);
     transition: color 0.3s ease;
-    background-color: rgba(249, 187, 30, 0.2);
+    background-color: var(--primary-color-transparent)
 }
 
 /* Footer */
@@ -139,7 +212,7 @@ footer {
 
 #progress {
     width: 80%;
-    background-color: #000000;
+    background-color: var(--bar-background);
     border-radius: 10px;
     margin: 20px auto;
     height: 20px;
@@ -153,6 +226,13 @@ footer {
     background-color: var(--primary-color);
     transition: width 0.5s ease;
     color: var(--background-color);
+    border-radius: 10px;
+    position: relative;
+}
+
+#progress.complete {
+    box-shadow: 0 0 7px 1px var(--primary-color);
+    transition: box-shadow 1s ease-in-out;
 }
 
 #progress-text {
@@ -175,10 +255,10 @@ footer {
 
 #email {
     flex: 7;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--email-background-color);
+    color: var(--email-text-color);
     padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,1);
+    box-shadow: 0 2px 8px var(--email-shadow);
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 6px;
 }
@@ -196,7 +276,7 @@ footer {
     align-items: center;
     display: flex;
     gap: 10px;
-    color: #555;
+    color: var(--email-info-color);
     flex-wrap: wrap;
     margin-bottom: 20px;
 }

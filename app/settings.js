@@ -43,4 +43,24 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         reader.readAsText(file);
     });
+
+    const themeButtons = document.querySelectorAll("#theme-buttons button");
+    const savedTheme = localStorage.getItem("theme") || "default";
+    setTheme(savedTheme)
+
+    themeButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const theme = button.getAttribute("data-theme");
+            setTheme(theme);
+            localStorage.setItem("theme", theme);
+        });
+    });
+
+    function setTheme(theme) {
+        document.documentElement.classList.remove("theme-default", "theme-light", "theme-dark", "theme-midnight");
+        document.documentElement.classList.add(`theme-${theme}`);
+        themeButtons.forEach(btn => {
+            btn.classList.toggle("active", btn.getAttribute("data-theme") === theme);
+        });
+    }
 });

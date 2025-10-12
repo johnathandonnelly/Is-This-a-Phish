@@ -19,6 +19,12 @@ fetch('lesson.json')
                         button.disabled = true;
                     }
                 }
+
+                if (completed.includes(lesson.id)) {
+                    if (button) {
+                        button.classList.add('completed');
+                    }
+                }
             });
         });
 
@@ -39,5 +45,10 @@ fetch('lesson.json')
             text.style.color = "#000";
         } else {
             text.style.color = "#FFF"
+        }
+
+        if (percent === 100) {
+            console.log("Progress is 100%")
+            document.getElementById("progress").classList.add("complete");
         }
     });

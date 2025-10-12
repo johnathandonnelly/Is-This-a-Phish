@@ -1,8 +1,21 @@
 # Changelog
 
+## [?.?.?] - ????-??-??
+
+### Added
+
+* Colour themes (default, light, dark, midnight)
+
+### Changed
+
+* Progress bar glow on 100%
+* Replaced placeholder lessons with near-finished ones
+* Active pages do not play hover animation
+
 ## [0.0.5] - 2025-10-03
 
 ### Added
+
 * Detailed lesson plans in [CONCEPT.md](/CONCEPT.md)
 
 ### Changed
