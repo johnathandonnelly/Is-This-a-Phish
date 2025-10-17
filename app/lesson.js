@@ -1,4 +1,3 @@
-// test.js
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const lessonId = urlParams.get("lesson") || "T1";
@@ -16,6 +15,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     function isLessonComplete(id) {
         return getCompletedLessons().includes(id);
+    }
+
+    function setButtonTooltips() {
+        const tips = {
+            "phish-btn": "Mark this email as phishing",
+            "legit-btn": "Mark this email as legitimate",
+            "hint-btn": "Get a hint (click multiple times for more hints)",
+            "answer-btn": "Reveal the answer",
+            "next-btn": "Go to the next lesson"
+        };
+        Object.entries(tips).forEach(([id, t]) => {
+            const el = document.getElementById(id);
+            if (el) el.title = t;
+        });
     }
 
     // Elements
@@ -89,23 +102,39 @@ document.addEventListener("DOMContentLoaded", () => {
                 lessonData.userDescription || "";
             document.getElementById("company-description").textContent =
                 lessonData.companyDescription || "";
+            document.getElementById("lesson-description").innerHTML =
+                lessonData.lessonDescription || "";
 
             updateNextButton(lessonData);
 
             // Button event listeners
             document.querySelectorAll("#buttons button").forEach((button) => {
+                let hintIndex = 0; // track which hint to display
                 button.addEventListener("click", () => {
                     const userChoice = button.textContent.toLowerCase();
                     if (userChoice === "phish" || userChoice === "legit") {
                         if (userChoice === window.correctAnswer.toLowerCase()) {
-                            resultMessage.textContent = "Correct!";
+                            // resultMessage.textContent = "Correct!";
+                            resultMessage.innerHTML = `<strong>Correct!</strong><br>${lessonData.answer || "No explanation provided."}`;
                             markLessonComplete(lessonId);
                             updateNextButton(window.lessonData); // enable next button
                         } else {
                             resultMessage.textContent = "Incorrect!";
                         }
                     } else if (userChoice === "hint") {
-                        resultMessage.textContent = lessonData.hint || "No hint available";
+                        // multiple hints
+                        if (hintIndex === 0) {
+                            // first hint
+                            resultMessage.textContent = lessonData.hint || "No hint available";
+                        } else if (lessonData.hints && hintIndex <=  lessonData.hints.length) {
+                            // show other hints
+                            resultMessage.textContent = lessonData.hints[hintIndex - 1];
+                        } else {
+                            // show answer if no more hints
+                            resultMessage.textContent = lessonData.answer || "No answer available";
+                            return; // stop incrementing hintindex
+                        }
+                        hintIndex++; // move to next hint
                     } else if (userChoice === "answer") {
                         resultMessage.textContent = lessonData.answer || "No answer available";
                     }
@@ -153,5 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
             };
             reader.readAsText(file);
         };
-    }
+    };
+
+    setButtonTooltips();
 });

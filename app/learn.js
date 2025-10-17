@@ -41,7 +41,12 @@ fetch('lesson.json')
         const text = document.getElementById("progress-text");
         text.textContent = `${percent}%`;
 
-        if (percent > 3) {
+        if (bar) {
+            bar.title = `${completedCount} of ${totalLessons} lessons completed`;
+        }
+        if (text) text.title = `${completedCount} of ${totalLessons} lessons completed`;
+
+        if (percent > 2) {
             text.style.color = "#000";
         } else {
             text.style.color = "#FFF"

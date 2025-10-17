@@ -1,6 +1,32 @@
 # Changelog
 
-## [?.?.?] - ????-??-??
+## [0.1.0] - 2025-10-17
+
+### Added
+
+* Multiple tiers of hints functionality
+* Lesson description functionality
+* Intermediate placeholder lessons
+* Advanced template lessons
+* 100% json file included
+* Overhauled README
+* Contributing, Code of Conduct, and Security information
+* New icon
+* Action to enforce DCO sign-offs
+* [meta.json](/app/meta.json) for future use
+
+### Changed
+
+* Correct answer also shows explanation
+* Hovering over progress bar shows amount of completed lessons
+* Hovering over lesson buttons shows their function
+* Next button size
+* Next button and result message order 
+* Fixed v0.0.6 log date and version
+* Removed scrollbar
+* [index.html](/index.html) footer, temporarily
+
+## [0.0.6] - 2025-10-12
 
 ### Added
 

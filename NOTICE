@@ -1,2 +1,22 @@
-Is This a Phish?
-Copyright 2025 Johnathan Donnelly
+NOTICE for Is This a Phish?
+
+1. Project Name and Branding
+
+The name "Is This a Phish?" and all associated logos, icons, and branding elements are trademarks of Johnathan Donnelly.
+They are **NOT** covered by the GNU General Public License version 3 (GPLv3) that applies to the source code.
+Use of the project name or branding without explicit permission is prohibited.
+
+2. Licensing of the Source Code
+
+The source code in this repository is licensed under the GNU General Public License version 3 (GPLv3).
+You are free to use, modify, and distribute the code under the terms of the GPLv3 license.
+See the LICENSE file for the full license text.
+
+3. Contributions
+
+By contributing to this project, you agree that your contributions will be licensed under the GPLv3.
+Please ensure that any contributions you make are your original work or properly licensed for inclusion.
+
+---
+
+If you have questions about trademark use or licensing, please open an issue or discussion on GitHub.
