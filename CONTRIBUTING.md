@@ -4,7 +4,7 @@ Thanks for your interest in contributing! Whether you're adding a feature, fixin
 
 ## How to Contribute
 
-> **Note:** Please remember to add a "Signed-off-by" line to your commits using `git commit -s`. This certifies you have the right to contribute the code and agree to license it under GPLv3.
+> **Note:** Please remember to add a "Signed-off-by" line to your commits using `git commit -s`. This certifies you have the right to contribute the code and agree to license it under AGPLv3.
 
 1. **Fork the repository**
 2. **Create a new branch**
@@ -45,7 +45,7 @@ Thanks again for helping improve *Is This a Phish?*.
 
 ## Developer Certificate of Origin (DCO)
 
-By making a contribution to this project, you certify that you have the legal right to do so and agree to license your contribution under the GPLv3 license.
+By making a contribution to this project, you certify that you have the legal right to do so and agree to license your contribution under the AGPLv3 license.
 
 To certify your contributions, please add a "Signed-off-by" line to your commit messages. This can be done easily by using:
 
@@ -83,4 +83,4 @@ If you need help, feel free to ask in an issue or discussion.
 
 ---
 
-By submitting a contribution, you agree to license your work under the same license as the project (GPLv3).
+By submitting a contribution, you agree to license your work under the same license as the project (AGPLv3).

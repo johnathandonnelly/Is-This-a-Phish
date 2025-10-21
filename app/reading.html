@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lesson</title>
+    <title>Reading</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="../assets/icon_v2.ico">
     <!-- Fonts -->
@@ -18,56 +18,46 @@
             <a id="website-title" href="../index.html">Is This a Phish?</a>
             <ul>
                 <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a class="active-page" href="learn.html"><i class="fa-solid fa-graduation-cap"></i> Learn</a></li>
-                <li><a href="history.html"><i class="fa-solid fa-landmark"></i> History</a></li>
+                <li><a href="learn.html"><i class="fa-solid fa-graduation-cap"></i> Learn</a></li>
+                <li><a class="active-page" href="history.html"><i class="fa-solid fa-landmark"></i> History</a></li>
                 <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
                 <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
             </ul>
             <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         </header>
 
-        <main id="lesson">
-            <div id="email">
-                <div id="email-title">
+        <main id="reading">
+            <div id="reading-email">
+                <div id="reading-email-title">
                     <p>Email Title</p>
                 </div>
-                <div id="email-info">
+                <div id="reading-email-info">
                     <p>First Last</p>
                     <p>first.last@email.com</p>
                 </div>
-                <div id="email-content">
+                <div id="reading-email-content">
                     <p>Hello,<br><br>
                     You're not supposed to see this.<br><br>
                     Thanks!</p>
                 </div>
             </div>
-            <div id="info">
-                <div id="info-intro">
-                    <p id="lesson-number">Lesson - #</p>
-                    <h1 id="lesson-title">Lesson Title</h1>
+            <div id="reading-info">
+                <div id="reading-info-intro">
+                    <h1 id="reading-title">Reading Title</h1>
                 </div>
-                <div id="info-background">
-                    <h2>You</h2>
-                    <p id="user-description">Who you are.</p>
-                    <h2>Company</h2>
-                    <p id="company-description">Who your company is.</p>
+                <div id="reading-info-background">
                     <h2>Lesson Description</h2>
-                    <p id="lesson-description">Lesson details would have appeared here.</p>
+                    <p id="reading-description">Reading details would have appeared here.</p>
                 </div>
-                <div id="buttons">
-                    <button id="phish-btn">Phish</button>
-                    <button id="legit-btn">Legit</button>
-                    <button id="hint-btn">Hint</button>
-                    <button id="answer-btn">Answer</button>
-                </div>
-                <button id="next-btn">Next Lesson</button>
+                <button class="reading-buttons" id="reading-complete-btn">Complete</button>
+                <button class="reading-buttons" id="reading-next-btn">Next Reading</button>
                 <div id="result-message"></div>
             </div>
         </main>
 
         <footer class="center-content"></footer>
 
-        <script src="lesson.js"></script>
+        <script src="reading.js"></script>
         <script src="load-stuff.js"></script>
         <script src="load-footer.js" defer></script>
     </div>

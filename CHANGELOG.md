@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.2.0] - 2025-10-20
+
+### Added
+
+* [History](/app/history.html) page template to show real-life phishing events
+* [Profile](/app/profile.html) page showing username, lessons and readings completed
+* Link functionality and styling
+* Mobile screen size support
+* Color theme using image functionality
+* Backwards compatibility with lesson progress JSONs
+* [Profile file with 100% completion](/profile.json) included
+
+### Changed
+
+* Exporting includes username, colour theme, and readings 
+* Improved navigation buttons
+* Improved footer using [meta.json](/app/meta.json)
+* Improved [icon](/assets/icon_v2.png)
+* Credits section in [Settings](/app/settings.html)
+* GPLv3 --> AGPLv3
+
+### Removed
+
+* Light and midnight theme (temporarily)
+
 ## [0.1.0] - 2025-10-17
 
 ### Added

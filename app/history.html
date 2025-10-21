@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>History</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../assets/icon_v2.ico">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <a id="website-title" href="../index.html">Is This a Phish?</a>
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="learn.html"><i class="fa-solid fa-graduation-cap"></i> Learn</a></li>
+                <li><a class="active-page" href="history.html"><i class="fa-solid fa-landmark"></i> History</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+                <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            </ul>
+            <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        </header>
+
+        <main>
+            <div id="learn-page" class="center-content">
+                <h1 class="title">History</h1>
+
+                <div id="progress-summary"><h2>0/0 Readings Completed</h2></div>
+                <div class="center-content" id="progress">
+                    <div id="progress-bar"></div>
+                    <span id="progress-text"></span>
+                </div>
+
+                <div class="center-content">
+                    <h2>Readings</h2>
+                    <div>
+                        <button onclick="window.location.href='reading.html?reading=R1'" data-reading-id="R1">Reading 1</button>
+                        <button onclick="window.location.href='reading.html?reading=R2'" data-reading-id="R2">The Second Reading</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="center-content"></footer>
+
+        <script src="history.js"></script>
+        <script src="load-stuff.js"></script>
+        <script src="load-footer.js" defer></script>
+    </div>
+</body>
+
+</html>

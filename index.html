@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Is This a Phish?</title>
     <link rel="stylesheet" href="app/styles.css">
-    <link rel="icon" href="assets/icon.ico">
+    <link rel="icon" href="assets/icon_v2.ico">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,10 +17,13 @@
         <header>
             <a id="website-title" href="index.html">Is This a Phish?</a>
             <ul>
-                <li><a class="active-page" href="index.html">Home</a></li>
-                <li><a href="app/learn.html">Learn</a></li>
-                <li><a href="app/settings.html">Settings</a></li>
+                <li><a class="active-page" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="app/learn.html"><i class="fa-solid fa-graduation-cap"></i> Learn</a></li>
+                <li><a href="app/history.html"><i class="fa-solid fa-landmark"></i> History</a></li>
+                <li><a href="app/profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+                <li><a href="app/settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
             </ul>
+            <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         </header>
 
         <main>
@@ -31,11 +36,10 @@
             </div>
         </main>
 
-        <footer class="center-content">
-            Created with ❤️ by Johnathan Donnelly
-        </footer>
+        <footer class="center-content"></footer>
 
-        <script src="app/load-theme.js"></script>
+        <script src="app/load-stuff.js"></script>
+        <script src="app/load-footer.js" defer></script>
     </div>
 </body>
 

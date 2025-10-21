@@ -27,6 +27,10 @@ An interactive educational website for learning to spot phishing emails.
 Check it out [here](https://johnathandonnelly.github.io/Is-This-a-Phish/)
 <br/><br/>
 
+## 🖼️ Preview
+
+![Preview](./assets/home-0_2_0.png)
+
 ## 🔍 Features
 
 * Interactive phishing email identification
@@ -73,20 +77,20 @@ http://localhost:3000
 
 ## ✨ What's New
 
-**Version 0.1.0**
+**Version 0.2.0**
 
 For detailed changes, visit [Releases](https://github.com/johnathandonnelly/Is-This-a-Phish/releases).
 
 **✨ Highlights**
 
-* Lesson descriptions
-* Multiple tiers of hints
-* Contribution information
+* Profiles
+* History (real-life phishing events)
+* Mobile screen support
 
 **Changes**
 
-* Correct answer also shows explanation
-* Tooltips
+* Improved navigation bar
+* GPLv3 --> AGPLv3
 
 ## 🛣️ Roadmap
 
@@ -94,13 +98,11 @@ For future updates, I'll focus on the items below:
 
 * Improved UI and accessibility
 * Improved and narrative-driven lessons
-* Support for different screen sizes
 * Support for other languages
 * Support for local installation
-* Functionality for attachments and links
+* Functionality for attachments
 * New random challenge mode
 * New custom colour themes
-* New seperate real life scenarios
 
 ## 🙋 FAQ
 
@@ -108,7 +110,7 @@ For future updates, I'll focus on the items below:
 A: Yes! All the emails are fake and for educational use only.
 
 **Q: Does the site collect any user data?**<br>
-A: No, except for lesson progress saved in LocalStorage, which can be cleared and viewed through the Settings page.
+A: No. All progress is stored in your LocalStorage, which can be cleared and exported through the Settings page.
 
 ## 🤝 Contributing
 
@@ -122,6 +124,6 @@ If you discover a security vulnerability, please read [Security Guide](/SECURITY
 
 Copyright © Johnathan Donnelly. All rights reserved.
 
-Licensed under the GNU General Public License v3.0 (GPLv3).
+Licensed under the GNU Affero General Public License v3.0 (AGPLv3).
 
 See [LICENSE](LICENSE) for details.

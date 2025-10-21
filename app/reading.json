@@ -1,0 +1,25 @@
+{
+    "readings": [
+        {
+            "id": "R1",
+            "readingTitle": "THIS IS READING 1",
+            "title": "Email Title",
+            "senderName": "Sender Name",
+            "senderEmail": "Sender Email",
+            "body": "body of email",
+            "lessonDescription": "Description of the lesson.",
+            "correctAnswer": "complete",
+            "next": "R2"
+        },
+        {
+            "id": "R2",
+            "readingTitle": "READING 2'S TITLE",
+            "title": "the email title second",
+            "senderName": "NAME OF SENDER",
+            "senderEmail": "EMAIL OF SENDER",
+            "body": "THE BODY OF THE EMAIL",
+            "lessonDescription": "description for reading 2 description.",
+            "correctAnswer": "complete"
+        }
+    ]
+}

@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Settings</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="../assets/icon.ico">
+    <link rel="icon" href="../assets/icon_v2.ico">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,31 +17,40 @@
         <header>
             <a id="website-title" href="../index.html">Is This a Phish?</a>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="learn.html">Learn</a></li>
-                <li><a class="active-page" href="settings.html">Settings</a></li>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="learn.html"><i class="fa-solid fa-graduation-cap"></i> Learn</a></li>
+                <li><a href="history.html"><i class="fa-solid fa-landmark"></i> History</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+                <li><a class="active-page" href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
             </ul>
+            <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         </header>
 
         <main>
             <div id="settings-page" class="center-content">
                 <h1 class="title">Settings</h1>
                 <div class="center-content">
-                    <h2>Colour Themes</h2>
-                    <p>Choose your preferred colour theme.</p>
+                    <h2>Change Theme</h2>
+                    <p>Customize the look of the website.</p>
                     <div id="theme-buttons">
                         <button data-theme="default">Default</button>
-                        <button data-theme="light">Light</button>
                         <button data-theme="dark">Dark</button>
-                        <button data-theme="midnight">Midnight</button>
+                        <button data-theme="water">Water</button>
+                        <button data-theme="fire">Fire</button>
                     </div>
                 </div>
                 <div class="center-content">
-                    <h2>Export / Import</h2>
-                    <p>Keep your progress across different browsers.</p>
+                    <h2>Change Name</h2>
+                    <p>Change the name of your profile.</p>
                     <div>
-                        <button id="export-progress-btn">Export Progress</button>
-                        <button id="import-progress-btn">Import Progress</button>
+                        <button id="change-username-btn">Change Name</button>
+                    </div>
+                <div class="center-content">
+                    <h2>Export / Import</h2>
+                    <p>Keep your profile across different browsers.</p>
+                    <div>
+                        <button id="export-progress-btn">Export Profile</button>
+                        <button id="import-progress-btn">Import Profile</button>
                         <input type="file" id="import-file-input" accept="application/json" style="display:none" />
                     </div>
                 </div>
@@ -48,15 +59,19 @@
                     <p>Clear all saved progress and data.</p>
                     <button id="clear-storage-btn">Clear Local Storage</button>
                 </div>
+                <div class="center-content">
+                    <h2>Credits</h2>
+                    <p>Photo by  <a class="link" href="https://unsplash.com/@ninjason" target="_blank">Jason Leung</a> on <a href="https://unsplash.com/photos/a-large-body-of-water-with-a-sky-in-the-background-MbvWmuG6SDM" target="_blank" class="link">Unsplash</a></p>
+                    <p>Photo by  <a class="link" href="https://unsplash.com/@david_mccumskay" target="_blank">David McCumskay</a> on <a href="https://unsplash.com/photos/brown-smoke-on-black-background-JKAKwrATVq8" target="_blank" class="link">Unsplash</a></p>
+                </div>
             </div>
         </main>
 
-        <footer class="center-content">
-            &copy; 2025 Johnathan Donnelly
-        </footer>
+        <footer class="center-content"></footer>
 
         <script src="settings.js"></script>
-        <script src="load-theme.js"></script>
+        <script src="load-stuff.js"></script>
+        <script src="load-footer.js" defer></script>
     </div>
 </body>
 
