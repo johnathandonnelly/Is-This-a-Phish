@@ -2,11 +2,15 @@
 <html>
 
 <head>
+<!--
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+See LICENSE-CODE in the project root for details.
+-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Is This a Phish?</title>
     <link rel="stylesheet" href="app/styles.css">
-    <link rel="icon" href="assets/icon_v2.ico">
+    <link rel="icon" href="assets/icon.ico">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -15,30 +19,51 @@
 <body>
     <div class="page-wrapper">
         <header>
-            <a id="website-title" href="index.html">Is This a Phish?</a>
+            <!-- <a id="website-title" href="index.html">Is This a Phish?</a> -->
+            <a href="index.html"><img src="/assets/transparent_long.png" height="15"></a>
             <ul>
                 <li><a class="active-page" href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="app/learn.html"><i class="fa-solid fa-graduation-cap"></i> Learn</a></li>
                 <li><a href="app/history.html"><i class="fa-solid fa-landmark"></i> History</a></li>
-                <li><a href="app/profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
-                <li><a href="app/settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                <li><a href="app/profile.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="app/settings.html"><i class="fa-solid fa-gear"></i></a></li>
+                <li><a href="app/credits.html"><i class="fa-solid fa-circle-info"></i></a></li>
             </ul>
             <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         </header>
 
         <main>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Version 0.3.0 - 2025-10-26</h2>
+                    <h3>Added</h3>
+                    <p>This very thing you're looking at</p>
+                    <p>Total Completion bar on your Profile</p>
+                    <h3>Changed</h3>
+                    <p>Credits is now its own page</p>
+                    <p>Navigation bar is now a little cleaner</p>
+                    <br><br>See full changes <a class="link" href="https://github.com/johnathandonnelly/Is-This-a-Phish/releases" target="_blank">here!</a>
+                </div>
+            </div>
             <div id="home" class="center-content">
-                <h1 class="title">Is This a Phish?</h1>
+                <!-- <h1 class="title">Is This a Phish?</h1> -->
+                <img src="assets/transparent.png" height="80" style="margin-bottom: 20px;">
                 <p>Learn and practice spotting phishing emails.</p>
-                <a href="app/learn.html">
-                    <button>Learn</button>
-                </a>
+                <div>
+                    <a href="app/learn.html"><button><i class="fa-solid fa-graduation-cap"></i> Learn</button></a>
+                    <a href="app/history.html"><button><i class="fa-solid fa-landmark"></i> History</button></a>
+                </div>
+                <div>
+                    <a><button id="whats-new"><i class="fa-solid fa-bolt"></i> What's New</button></a>
+                </div>
             </div>
         </main>
 
         <footer class="center-content"></footer>
 
         <script src="app/load-stuff.js"></script>
+        <script src="app/load-new.js"></script>
         <script src="app/load-footer.js" defer></script>
     </div>
 </body>

@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+// See LICENSE-CODE in the project root for details.
 document.addEventListener("DOMContentLoaded", () => {
     const clearBtn = document.getElementById("clear-storage-btn");
     const exportBtn = document.getElementById("export-progress-btn");
@@ -27,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = "profile.json";
+        a.download = "IsThisaPhish-profile.json";
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
@@ -67,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         reader.readAsText(file);
     });
 
-    const themeButtons = document.querySelectorAll("#theme-buttons button");
+    const themeButtons = document.querySelectorAll(".theme-buttons button");
     const savedTheme = localStorage.getItem("theme") || "default";
     setTheme(savedTheme)
 
@@ -80,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function setTheme(theme) {
-        document.documentElement.classList.remove("theme-default", "theme-dark", "theme-water", "theme-fire");
+        document.documentElement.classList.remove("theme-default", "theme-dark", "theme-ocean", "theme-halloween");
         document.documentElement.classList.add(`theme-${theme}`);
         themeButtons.forEach(btn => {
             btn.classList.toggle("active", btn.getAttribute("data-theme") === theme);

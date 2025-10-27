@@ -1,3 +1,5 @@
+This work is licensed under CC BY-NC-SA 4.0. See LICENSE in the project root for details.
+
 # Core Concept
 
 A website to learn and practice identifying phishing attacks in emails.

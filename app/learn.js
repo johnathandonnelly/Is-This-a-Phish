@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+// See LICENSE-CODE in the project root for details.
 document.addEventListener("DOMContentLoaded", function() {
     fetch('lesson.json')
         .then(res => res.json())

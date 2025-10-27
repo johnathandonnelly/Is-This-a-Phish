@@ -1,3 +1,6 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+// See LICENSE-CODE in the project root for details.
+
 // Loading theme
 const savedTheme = localStorage.getItem("theme") || "default";
 document.documentElement.classList.add(`theme-${savedTheme}`);

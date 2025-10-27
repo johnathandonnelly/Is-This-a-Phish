@@ -2,11 +2,15 @@
 <html>
 
 <head>
+<!--
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+See LICENSE-CODE in the project root for details.
+-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lesson</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="../assets/icon_v2.ico">
+    <link rel="icon" href="../assets/icon.ico">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -15,18 +19,37 @@
 <body>
     <div class="page-wrapper">
         <header>
-            <a id="website-title" href="../index.html">Is This a Phish?</a>
+            <!-- <a id="website-title" href="../index.html">Is This a Phish?</a> -->
+            <a href="../index.html"><img src="../assets/transparent_long.png" height="15"></a>
             <ul>
                 <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a class="active-page" href="learn.html"><i class="fa-solid fa-graduation-cap"></i> Learn</a></li>
                 <li><a href="history.html"><i class="fa-solid fa-landmark"></i> History</a></li>
-                <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
-                <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="settings.html"><i class="fa-solid fa-gear"></i></a></li>
+                <li><a href="credits.html"><i class="fa-solid fa-circle-info"></i></a></li>
             </ul>
             <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         </header>
 
         <main id="lesson">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Welcome to <i>Is This a Phish?™</i></h2>
+                    <p>In these lessons, you'll follow a person's journey as they advance in their career, encountering phishing emails along the way.</p>
+                    <p>At the start, they're just a student, but as they progress, the phishing attempts become increasingly sophisticated.</p>
+                    <br><h3>How to Complete Lessons</h3>
+                    <p>You'll receive emails (don't worry, they're completely safe) and decide whether each one is a <b>Phish</b> or <b>Legit</b> email.</p>
+                    <p>The tutorial lessons will teach you the basics of phishing, but as the difficulty increases, you'll need to rely on your own skills.</p>
+                    <br><h3>Reminder</h3>
+                    <p><i>Is This a Phish?™</i> was designed for people with no prior knowledge of cybersecurity.</p> 
+                    <p>It's not a replacement for established educational content or personal research.</p>
+                    <p>You are encouraged to use <i>Is This a Phish?™</i> alongside your own research.</p>
+                    <p>Each lesson covers a different topic and provides sources for you to further your learning.</p>
+                    <br><h3>Thank you for trying <i>Is This a Phish?™</i></h3>
+                </div>
+            </div>
             <div id="email">
                 <div id="email-title">
                     <p>Email Title</p>

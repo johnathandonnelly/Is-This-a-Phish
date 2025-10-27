@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+// See LICENSE-CODE in the project root for details.
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const lessonId = urlParams.get("lesson") || "T1";
@@ -185,4 +187,22 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     setButtonTooltips();
+
+    // Pop up modal
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+    completedLessons = getCompletedLessons();
+    if (lessonId === "T1" || completedLessons.length === 0) {
+        modal.style.display = "block";
+    }
+    if (span) {
+        span.onclick = function () {
+            modal.style.display = "none"
+        };
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 });

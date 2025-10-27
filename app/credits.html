@@ -8,7 +8,7 @@ See LICENSE-CODE in the project root for details.
 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Learn</title>
+    <title>Credits</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="../assets/icon.ico">
     <!-- Fonts -->
@@ -23,44 +23,33 @@ See LICENSE-CODE in the project root for details.
             <a href="../index.html"><img src="../assets/transparent_long.png" height="15"></a>
             <ul>
                 <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a class="active-page" href="learn.html"><i class="fa-solid fa-graduation-cap"></i> Learn</a></li>
+                <li><a href="learn.html"><i class="fa-solid fa-graduation-cap"></i> Learn</a></li>
                 <li><a href="history.html"><i class="fa-solid fa-landmark"></i> History</a></li>
                 <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
                 <li><a href="settings.html"><i class="fa-solid fa-gear"></i></a></li>
-                <li><a href="credits.html"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="credits.html" class="active-page"><i class="fa-solid fa-circle-info"></i></a></li>
             </ul>
             <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         </header>
 
         <main>
-            <div id="learn-page" class="center-content">
-                <h1 class="title">Learn</h1>
-
-                <div id="progress-summary"><h2>0/0 Lessons Completed</h2></div>
-                <div class="center-content" id="progress">
-                    <div id="progress-bar"></div>
-                    <span id="progress-text"></span>
-                </div>
-
+            <div id="settings-page" class="center-content">
+                <h1 class="title">Credits</h1>
                 <div class="center-content">
-                    <h2>Tutorial</h2>
-                    <button class="accordion">What Is Phishing?</button>
-                    <div class="panel">
-                        <button onclick="window.location.href='lesson.html?lesson=T1'" data-lesson-id="T1">Untitled Lesson</button>
-                    </div>
-                </div>
-                <div class="center-content">
-                    <h2>Beginner</h2>
-                    <h3>Coming soon...</h3>
+                    <h2>Assets</h2>
+                    <p>Icons by <a class="link" href="https://fontawesome.com/" target="_blank">Font Awesome</a></p>
+                    <p>Photo by <a class="link" href="https://unsplash.com/@jeremybishop" target="_blank">Jeremy Bishop</a> on <a href="https://unsplash.com/photos/a-large-body-of-water-under-a-cloudy-sky-G9i_plbfDgk" target="_blank" class="link">Unsplash</a></p>
+                    <h2>Functionality</h2>
+                    <p><a class="link" href="https://www.w3schools.com/howto/howto_js_accordion.asp" target="_blank">Accordion</a> by <a class="link" href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
+                    <p><a class="link" href="https://www.w3schools.com/howto/howto_css_modals.asp" target="_blank">Modal Box</a> by <a class="link" href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
                 </div>
             </div>
         </main>
 
         <footer class="center-content"></footer>
 
-        <script src="learn.js"></script>
+        <script src="settings.js"></script>
         <script src="load-stuff.js"></script>
-        <script src="accordion.js"></script>
         <script src="load-footer.js" defer></script>
     </div>
 </body>

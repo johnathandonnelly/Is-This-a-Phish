@@ -1,5 +1,45 @@
 # Changelog
 
+## [0.3.0] - 2025-10-26
+
+### Added
+
+* Pop-up introduction for Lesson: Tutorial - 1
+* Accordion dropdowns for Learn and History
+* Total Completed on Profile
+* Changelog pop-up on Home
+
+### Changed
+
+* Moved Credits from Settings into its own page.
+* Is This a Phish?™ home and navigation bar text with logos
+* AGPLv3 license to CC BY-NC-SA 4.0 and MPL 2.0 licenses
+* Simplified [Contributing](/CONTRIBUTING.md)
+* Arrangement of progress bars on Profile
+* Separated colour themes and image themes in Settings
+* Default file name for profile json exports
+
+### Removed
+
+* Text for Profile and Settings in the navigation bar
+* Early prototype to its own repository
+* SECURITY, CODE_OF_CONDUCT, and NOTICE
+* Action to enforce DCO sign-offs
+* progress.json
+
+### Notes on Licensing
+
+**Why so many license changes?**
+
+The project has always meant a lot to me, and I'm not the legal type, so I struggled to figure out how to protect it. I started with MIT, then moved to Apache 2.0, then GPLv3, and finally AGPLv3. Each time I realized they didn't quite fit the project.
+
+With 0.3.0, I've finally struck the balance between freedom and protection:
+
+* **MPL 2.0** covers the project's code.
+* **CC BY-NC-SA 4.0** covers all other content, including logos, names, write-ups, and other artistic, literary, or branding elements.
+
+This new approach ensures the project remains open source while ensuring protection and credibility.
+
 ## [0.2.0] - 2025-10-20
 
 ### Added

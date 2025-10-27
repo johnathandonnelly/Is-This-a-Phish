@@ -1,18 +1,13 @@
 <p align="center">
-    <picture>
-        <source media="(prefers-color-scheme: light)" srcset="./assets/banner.png">
-        <img src="./assets/banner.png">
-    </picture>
+    <img src="./assets/banner.png">
 </p>
 
 <h1 align="center">
-    <span>Is This a Phish?</span>
+    <span>Is This a Phish?™</span>
 </h1>
 
 <p align="center">
-    <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=html,css,js" />
-    </a>
+    <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=html,css,js"/></a>
 </p>
 
 <h3 align="center">
@@ -22,14 +17,14 @@
 </h3>
 
 <br/><br/>
-An interactive educational website for learning to spot phishing emails.
+Learn to spot phishing emails through interactive lessons.
 <br/><br/>
 Check it out [here](https://johnathandonnelly.github.io/Is-This-a-Phish/)
 <br/><br/>
 
 ## 🖼️ Preview
 
-![Preview](./assets/home-0_2_0.png)
+![Preview](./assets/home.png)
 
 ## 🔍 Features
 
@@ -46,11 +41,11 @@ Choose one of the installation methods below:
 
 Open the website hosted here on GitHub Pages:
 
-[Is This a Phish?](https://johnathandonnelly.github.io/Is-This-a-Phish/)
+[Is This a Phish?™](https://johnathandonnelly.github.io/Is-This-a-Phish/)
 </details>
 
 <details>
-<summary>Local Server</summary>
+<summary>Local Server (Python Required)</summary>
 
 Clone the repository and run a local server to open in a web browser:
 
@@ -77,27 +72,26 @@ http://localhost:3000
 
 ## ✨ What's New
 
-**Version 0.2.0**
+**Version 0.3.0**
 
 For detailed changes, visit [Releases](https://github.com/johnathandonnelly/Is-This-a-Phish/releases).
 
 **✨ Highlights**
 
-* Profiles
-* History (real-life phishing events)
-* Mobile screen support
+* Quickly view what's new from Home
+* Track your Total Completed count from Profile
 
 **Changes**
 
-* Improved navigation bar
-* GPLv3 --> AGPLv3
+* Credits is its own page
+* Cleaner navigation
 
 ## 🛣️ Roadmap
 
 For future updates, I'll focus on the items below:
 
-* Improved UI and accessibility
 * Improved and narrative-driven lessons
+* Improved UI and accessibility
 * Support for other languages
 * Support for local installation
 * Functionality for attachments
@@ -116,14 +110,22 @@ A: No. All progress is stored in your LocalStorage, which can be cleared and exp
 
 Contributions, suggestions, and feedback are all welcome!
 
-Before you start, please read the [Contributing Guide](/CONTRIBUTING.md) and [Code of Conduct](/CODE_OF_CONDUCT.md).
+Before you start, please read the [Contributing Guide](/CONTRIBUTING.md).
 
-If you discover a security vulnerability, please read [Security Guide](/SECURITY.md)
+## 🏷️ Trademark
+
+Is This a Phish?™ and its logos are trademarks of Johnathan Donnelly.
+
+They may not be used without written permission.
 
 ## 📜 License
 
-Copyright © Johnathan Donnelly. All rights reserved.
+Copyright © Johnathan Donnelly.
 
-Licensed under the GNU Affero General Public License v3.0 (AGPLv3).
+> All code in this repository is licensed under the Mozilla Public License 2.0 (MPL-2.0). See [LICENSE-CODE](/LICENSE-CODE) for full license text.
 
-See [LICENSE](LICENSE) for details.
+> All creative content (images, text, other assets) in this repository is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0). See [LICENSE](/LICENSE) for full license text.
+
+## ℹ️ Credits
+
+See [Credits](/app/credits.html) for contributors, external assets, and credits.

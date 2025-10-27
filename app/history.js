@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+// See LICENSE-CODE in the project root for details.
 document.addEventListener("DOMContentLoaded", function() {
     fetch(`reading.json`)
         .then(res => res.json())
@@ -7,6 +9,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 data[category].forEach(reading => {
                     const button = document.querySelector(`button[data-reading-id="${reading.id}"]`);
                     const link = document.querySelector(`a[data-reading-id="${reading.id}"]`);
+                    if (reading.prerequisite && !completed.includes(reading.prerequisite)) {
+                        if (link) {
+                            link.classList.add('locked');
+                            link.href = '#';
+                            link.title = `Complete reading ${reading.prerequisite} first`;
+                        }
+                        if (button) {
+                            button.classList.add('locked');
+                            button.disabled = true;
+                        }
+                    }
                     if (completed.includes(reading.id)) {
                         if (button) {
                             button.classList.add('completed');

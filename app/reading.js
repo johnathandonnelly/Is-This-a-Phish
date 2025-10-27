@@ -1,3 +1,5 @@
+// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+// See LICENSE-CODE in the project root for details.
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const readingId = urlParams.get("reading") || "R1";
@@ -62,6 +64,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert("Reading not found.");
                 return;
             }
+            if (readingData.prerequisite && !isReadingComplete(readingData.prerequisite)) {
+                    resultMessage.textContent = `You must complete reading ${readingData.prerequisite} before accessing this one.`;
+                    document.querySelectorAll("#buttons button").forEach((btn) => {
+                        btn.disabled = true;
+                    });
+                    nextBtn.style.display = "none";
+                    return;
+                }
 
 
             window.readingData = readingData;

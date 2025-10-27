@@ -1,3 +1,7 @@
+/*
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+See LICENSE-CODE in the project root for details.
+*/
 html, body { 
     max-width: 100%;
     overflow-x: hidden;
@@ -10,11 +14,13 @@ html, body {
     --text-color: #f0f0f0;
     --background-color: #2F4858;
     --background-image: none;
+    --font: Figtree;
 
     /* Website Supplements */
     --primary-color-transparent: rgba(249, 187, 30, 0.2);
     --button-inside-shadow: rgba(0,0,0,0.3);
     --bar-background: #000000;
+    --glass: rgba(255,255,255,0.3);
 
     /* Email */
     --email-text-color: #000000;
@@ -32,11 +38,13 @@ html, body {
     --text-color: #f0f0f0;
     --background-color: #2F4858;
     --background-image: none;
+    --font: Figtree;
 
     /* Website Supplements */
     --primary-color-transparent: rgba(249, 187, 30, 0.2);
     --button-inside-shadow: rgba(0,0,0,0.3);
     --bar-background: #000000;
+    --glass: rgba(255,255,255,0.3);
 
     /* Email */
     --email-text-color: #000000;
@@ -54,55 +62,89 @@ html, body {
     --text-color: #f0f0f0;
     --background-color: #1a1a1a;
     --background-image: none;
+    --font: Figtree;
 
     /* Website Supplements */
     --primary-color-transparent: rgba(249, 187, 30, 0.2);
     --button-inside-shadow: rgba(0,0,0,0.3);
     --bar-background: #000000;
-
-    /* Email*/
-    --email-text-color: #ffffff;
-    --email-info-color: #898989;
-    --link-text-color: #007bff;
-    --email-background-color: #000000;
-
-    /* Email Supplements */
-    --email-shadow: rgba(255,255,255,0.2); /* Shadow outside of email */
-}
-
-.theme-water {
-    /* Website */
-    --primary-color: #85a5ff;
-    --text-color: #f0f0f0;
-    --background-color: #2f4658;
-    --background-image: url('/assets/photos/jason-leung-MbvWmuG6SDM-unsplash.jpg');
-
-    /* Website Supplements */
-    --primary-color-transparent: rgba(118, 182, 247, 0.2);
-    --button-inside-shadow: rgba(0,0,0,0.3);
-    --bar-background: #000000;
+    --glass: rgba(255,255,255,0.3);
 
     /* Email */
     --email-text-color: #000000;
     --email-info-color: #555;
-    --link-text-color: #49b6ff;
+    --link-text-color: #007bff;
     --email-background-color: #ffffff;
 
     /* Email Supplements */
     --email-shadow: rgba(0,0,0,1); /* Shadow outside of email */
 }
 
-.theme-fire {
+.theme-halloween {
     /* Website */
-    --primary-color: #f91e1e;
+    --primary-color: #f97d1e;
     --text-color: #f0f0f0;
-    --background-color: #582f2f;
-    --background-image: url('/assets/photos/david-mccumskay-JKAKwrATVq8-unsplash.jpg');
+    --background-color: #1b1412;
+    --background-image: none;
+    --font: Figtree;
 
     /* Website Supplements */
-    --primary-color-transparent: rgba(249, 30, 30, 0.2);
+    --primary-color-transparent: rgba(249, 187, 30, 0.2);
     --button-inside-shadow: rgba(0,0,0,0.3);
     --bar-background: #000000;
+    --glass: rgba(255,255,255,0.3);
+
+    /* Email */
+    --email-text-color: #000000;
+    --email-info-color: #555;
+    --link-text-color: #007bff;
+    --email-background-color: #ffffff;
+
+    /* Email Supplements */
+    --email-shadow: rgba(0,0,0,1); /* Shadow outside of email */
+}
+
+.theme-halloween img {
+    filter: brightness(0.8) hue-rotate(-15deg);
+}
+
+.theme-ocean {
+    /* Website */
+    --primary-color: #F9BB1E;
+    --text-color: #f0f0f0;
+    --background-color: #010204;
+    --background-image: url('../external_assets/jeremy-bishop-G9i_plbfDgk-unsplash.jpg');
+    --font: Figtree;
+
+    /* Website Supplements */
+    --primary-color-transparent: rgba(249, 187, 30, 0.2);
+    --button-inside-shadow: rgba(0,0,0,0.3);
+    --bar-background: #000000;
+    --glass: rgba(255,255,255,0.3);
+
+    /* Email */
+    --email-text-color: #000000;
+    --email-info-color: #555;
+    --link-text-color: #007bff;
+    --email-background-color: #ffffff;
+
+    /* Email Supplements */
+    --email-shadow: rgba(0,0,0,1); /* Shadow outside of email */
+}
+
+.theme-secret {
+    /* Website */
+    --primary-color: #30f91e;
+    --text-color: #f0f0f0;
+    --background-color: #000000;
+    --background-image: none;
+    --font: "Courier New", Courier;
+
+    /* Website Supplements */
+    --primary-color-transparent: rgba(99, 249, 30, 0.2);
+    --button-inside-shadow: rgba(0,0,0,0.3);
+    --bar-background: #000000;
+    --glass: rgba(255,255,255,0.3);
 
     /* Email */
     --email-text-color: #000000;
@@ -132,7 +174,7 @@ body {
     background-attachment: fixed;
 
     color: var(--text-color);
-    font-family: Figtree;
+    font-family: var(--font);
     height: 100%;
     margin: 0;
 }
@@ -146,11 +188,14 @@ button {
     padding: 15px 30px;
     transition: background-color 0.3s ease;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 button:hover:not(:disabled) {
     background-color: var(--primary-color);
     box-shadow: inset 0 0 10px var(--button-inside-shadow);
+    transform: scale(1.02);
+    /*border: 2px solid var(--primary-color);*/
 }
 
 button:disabled {
@@ -234,7 +279,11 @@ ul li:last-child {
 
 ul li a {
     color: inherit;
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
     text-decoration: none;
     border-radius: 6px;
     padding: 8px 12px;
@@ -245,7 +294,8 @@ ul li a {
 ul li a:not(.active-page):hover {
     color: var(--primary-color);
     transition: color 0.3s ease;
-    background-color: var(--primary-color-transparent)
+    background-color: var(--primary-color-transparent);
+    /*border: 2px solid var(--primary-color);*/
 }
 
 #menu-toggle {
@@ -322,7 +372,58 @@ footer {
     pointer-events: none;
 }
 
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: var(--primary-color);
+}
+
+.panel {
+    display: none;
+    /*overflow: hidden;*/
+    transition: max-height 0.2s ease-out;
+}
+
 /* Lesson: Email */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--glass);
+}
+
+.modal-content {
+    background-color: var(--background-color);
+    margin: 15% auto;
+    padding: 20px;
+    border: 4px solid var(--primary-color);
+    border-radius: 6px;
+    width: 80%;
+}
+
+.close {
+    color: var(--text-color);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
 
 #lesson {
     display: flex;
@@ -514,6 +615,78 @@ footer {
     font-weight: bold;
     pointer-events: none;
 }
+
+
+
+
+
+#profile-total-progress-summary h2 {
+    margin-bottom: 0px;
+}
+
+#profile-total-progress {
+    width: 80%;
+    background-color: var(--bar-background);
+    border-radius: 10px;
+    margin: 20px auto;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#profile-total-progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: var(--primary-color);
+    transition: width 0.5s ease;
+    color: var(--background-color);
+    border-radius: 10px;
+    position: relative;
+}
+
+#profile-total-progress.complete {
+    box-shadow: 0 0 7px 1px var(--primary-color);
+    transition: box-shadow 1s ease-in-out;
+}
+
+#profile-total-progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+
+
+
+
+
+#profile-progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 88%;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.profile-progress-section {
+    flex: 1;
+    min-width: 280px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers text and bar */
+}
+
+
+
+
+
 
 
 
