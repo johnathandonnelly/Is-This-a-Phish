@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", function() {
             if (text) text.title = `${completedCount} of ${totalLessons} lessons completed`;
 
             if (percent > 2) {
-                text.style.color = "#000";
+                text.style.color = "var(--background-color)";
             } else {
-                text.style.color = "#FFF"
+                text.style.color = "var(--text-color)"
             }
 
             if (percent === 100) {

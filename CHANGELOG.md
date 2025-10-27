@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.1] - 2025-10-27
+
+### Added
+
+* Halloween and Monochrome colour themes
+
+### Changed
+
+* Fixed navigation image not showing while on Home
+* Seperated styles.css and themes.css
+
 ## [0.3.0] - 2025-10-26
 
 ### Added

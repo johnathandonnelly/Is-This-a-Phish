@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function() {
             if (text) text.title = `${completedCount} of ${totalLessons} lessons completed`;
 
             if (percent > 2) {
-                text.style.color = "#000";
+                text.style.color = "var(--background-color)";
             } else {
-                text.style.color = "#FFF"
+                text.style.color = "var(--text-color)"
             }
 
             if (percent === 100) {
@@ -85,9 +85,9 @@ document.addEventListener("DOMContentLoaded", function() {
             if (text) text.title = `${completedCount} of ${totalReadings} readings completed`;
 
             if (percent > 2) {
-                text.style.color = "#000";
+                text.style.color = "var(--background-color)";
             } else {
-                text.style.color = "#FFF"
+                text.style.color = "var(--text-color)"
             }
 
             if (percent === 100) {
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function() {
         bar.title = `${totalCompleted} of ${totalItems} total items completed`;
         text.title = `${totalCompleted} of ${totalItems} total items completed`;
 
-        text.style.color = totalPercent > 2 ? "#000" : "#FFF";
+        text.style.color = totalPercent > 2 ? "var(--background-color)" : "var(--text-color)";
 
         if (totalPercent === 100) {
             document.getElementById("profile-total-progress").classList.add("complete");

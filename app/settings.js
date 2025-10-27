@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function setTheme(theme) {
-        document.documentElement.classList.remove("theme-default", "theme-dark", "theme-ocean", "theme-halloween");
+        document.documentElement.classList.remove("theme-default", "theme-dark", "theme-ocean", "theme-light", "theme-halloween", "theme-monochrome");
         document.documentElement.classList.add(`theme-${theme}`);
         themeButtons.forEach(btn => {
             btn.classList.toggle("active", btn.getAttribute("data-theme") === theme);
