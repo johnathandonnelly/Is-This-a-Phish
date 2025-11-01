@@ -28,7 +28,7 @@ See LICENSE-CODE in the project root for details.
                 <li><a href="history.html"><i class="fa-solid fa-landmark"></i> History</a></li>
                 <li><a class="active-page" href="profile.html"><i class="fa-solid fa-user"></i></a></li>
                 <li><a href="settings.html"><i class="fa-solid fa-gear"></i></a></li>
-                <li><a href="credits.html"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="credits.html"><i class="fa-solid fa-hand-holding-heart"></i></a></li>
             </ul>
             <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         </header>
@@ -36,6 +36,7 @@ See LICENSE-CODE in the project root for details.
         <main>
             <div id="profile-page" class="center-content">
                 <h1 class="title" id="username">User</h1>
+                <i class="fa-solid fa-pen modal-class" id="change-username-btn"></i>
 
                 <div id="profile-total-progress-summary"><h2>Total Completed</h2></div>
                 <div class="center-content" id="profile-total-progress">
@@ -65,18 +66,27 @@ See LICENSE-CODE in the project root for details.
         </main>
 
         <footer class="center-content"></footer>
-
-        <script src="profile.js"></script>
-        <script src="load-stuff.js"></script>
-        <script src="load-footer.js" defer></script>
-        <script>
-            // read saved username
-            document.addEventListener("DOMContentLoaded", () => {
-                const username = localStorage.getItem("username") || "User";
-                document.getElementById("username").textContent = username;
-            })
-        </script>
     </div>
+    <script src="profile.js"></script>
+    <script src="load-stuff.js"></script>
+    <script src="load-footer.js" defer></script>
+    <script>
+    // read saved username
+    document.addEventListener("DOMContentLoaded", () => {
+        const username = localStorage.getItem("username") || "User";
+        document.getElementById("username").textContent = username;
+    })
+    </script>
+    <script>
+    const changeNameBtn = document.getElementById("change-username-btn");
+    changeNameBtn.addEventListener("click", () => {
+        const newUsername = prompt("Enter your new username: ", localStorage.getItem("username") || "User");
+        if (newUsername) {
+            localStorage.setItem("username", newUsername);
+            document.getElementById("username").textContent = newUsername;
+        }
+    })
+    </script>
 </body>
 
 </html>

@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.3.2] - 2025-10-31
+
+### Added
+
+* Pop-up information for Learn and History
+* Change username from Profile
+
+### Changed
+
+* Accordions handle completed and locked states
+* Most buttons have icons
+* Improved theme separation
+* Credits icon
+* Description on Home
+
 ## [0.3.1] - 2025-10-27
 
 ### Added

@@ -83,6 +83,14 @@ button.completed {
     background-color: var(--primary-color);
 }
 
+.accordion.completed {
+    background-color: var(--primary-color);
+}
+
+.accordion.locked {
+    pointer-events: none;
+}
+
 /* Classes */
 
 .title {
@@ -205,6 +213,15 @@ footer {
 
 /* Learn */
 
+.modal-class {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal-class:hover {
+    color: var(--primary-color);
+}
+
 #learn-page button {
     margin-bottom: 20px;
 }
@@ -263,6 +280,16 @@ footer {
     display: none;
     /*overflow: hidden;*/
     transition: max-height 0.2s ease-out;
+}
+
+.accordion:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f078";
+}
+
+.accordion.active::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f077";
 }
 
 /* Lesson: Email */

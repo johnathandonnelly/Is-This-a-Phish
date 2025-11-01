@@ -28,15 +28,23 @@ See LICENSE-CODE in the project root for details.
                 <li><a href="history.html"><i class="fa-solid fa-landmark"></i> History</a></li>
                 <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
                 <li><a href="settings.html"><i class="fa-solid fa-gear"></i></a></li>
-                <li><a href="credits.html"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="credits.html"><i class="fa-solid fa-hand-holding-heart"></i></a></li>
             </ul>
             <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         </header>
 
         <main>
+            <div class="modal myModal2">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Learn</h2>
+                    <p>Learn to spot phishing emails through interactive lessons.</p>
+                </div>
+            </div>
+
             <div id="learn-page" class="center-content">
                 <h1 class="title">Learn</h1>
-
+                <i class="fa-solid fa-circle-info modal-class"></i>
                 <div id="progress-summary"><h2>0/0 Lessons Completed</h2></div>
                 <div class="center-content" id="progress">
                     <div id="progress-bar"></div>
@@ -45,9 +53,9 @@ See LICENSE-CODE in the project root for details.
 
                 <div class="center-content">
                     <h2>Tutorial</h2>
-                    <button class="accordion">What Is Phishing?</button>
+                    <button class="accordion" data-category="tutorial"> What Is Phishing?</button>
                     <div class="panel">
-                        <button onclick="window.location.href='lesson.html?lesson=T1'" data-lesson-id="T1">Untitled Lesson</button>
+                        <button onclick="window.location.href='lesson.html?lesson=T1'" data-lesson-id="T1"><i class="fa-solid fa-graduation-cap"></i> Untitled Lesson</button>
                     </div>
                 </div>
                 <div class="center-content">
@@ -62,6 +70,7 @@ See LICENSE-CODE in the project root for details.
         <script src="learn.js"></script>
         <script src="load-stuff.js"></script>
         <script src="accordion.js"></script>
+        <script src="load-new.js"></script>
         <script src="load-footer.js" defer></script>
     </div>
 </body>

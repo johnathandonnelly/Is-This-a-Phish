@@ -28,7 +28,7 @@ See LICENSE-CODE in the project root for details.
                 <li><a href="history.html"><i class="fa-solid fa-landmark"></i> History</a></li>
                 <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
                 <li><a class="active-page" href="settings.html"><i class="fa-solid fa-gear"></i></a></li>
-                <li><a href="credits.html"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="credits.html"><i class="fa-solid fa-hand-holding-heart"></i></a></li>
             </ul>
             <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         </header>
@@ -40,37 +40,40 @@ See LICENSE-CODE in the project root for details.
                     <h2>Change Theme</h2>
                     <p>Customize the look of the website.</p>
                     <div class="theme-buttons" style="text-align: center;">
-                        <h3>Colour Themes</h3>
-                        <button data-theme="default">Default</button>
-                        <button data-theme="dark">Dark</button>
-                        <button data-theme="light">Light</button>
-                        <button data-theme="monochrome">Monochrome</button>
-                        <button data-theme="halloween">Halloween</button>
+                        <h3>Base Themes</h3>
+                        <button data-theme="default"><i class="fa-solid fa-palette"></i> Default</button>
+                        <button data-theme="dark"><i class="fa-solid fa-palette"></i> Dark</button>
+                        <button data-theme="ocean"><i class="fa-solid fa-image"></i> Ocean</button>
                     </div>
                     <div class="theme-buttons" style="text-align: center;">
-                        <h3>Image Themes</h3>
-                        <button data-theme="ocean">Ocean</button>
+                        <h3>Event Themes</h3>
+                        <button data-theme="halloween"><i class="fa-solid fa-palette"></i> Halloween</button>
+                    </div>
+                    <div class="theme-buttons" style="text-align: center;">
+                        <h3>WIP Themes</h3>
+                        <button data-theme="light"><i class="fa-solid fa-palette"></i> Light</button>
+                        <button data-theme="monochrome"><i class="fa-solid fa-palette"></i> Monochrome</button>
                     </div>
                 </div>
                 <div class="center-content">
                     <h2>Change Name</h2>
                     <p>Change the name of your profile.</p>
                     <div>
-                        <button id="change-username-btn">Change Name</button>
+                        <button id="change-username-btn"><i class="fa-solid fa-pen modal-class"></i> Change Name</button>
                     </div>
                 <div class="center-content">
                     <h2>Export / Import</h2>
                     <p>Keep your profile across different browsers.</p>
                     <div>
-                        <button id="export-progress-btn">Export Profile</button>
-                        <button id="import-progress-btn">Import Profile</button>
+                        <button id="export-progress-btn"><i class="fa-solid fa-file-arrow-down"></i> Export Profile</button>
+                        <button id="import-progress-btn"><i class="fa-solid fa-file-arrow-up"></i> Import Profile</button>
                         <input type="file" id="import-file-input" accept="application/json" style="display:none" />
                     </div>
                 </div>
                 <div class="center-content">
                     <h2>Clear Local Storage</h2>
                     <p>Clear all saved progress and data.</p>
-                    <button id="clear-storage-btn">Clear Local Storage</button>
+                    <button id="clear-storage-btn"><i class="fa-solid fa-trash"></i> Clear Local Storage</button>
                 </div>
             </div>
         </main>
