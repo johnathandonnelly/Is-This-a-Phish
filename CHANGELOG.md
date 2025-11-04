@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.3.3] - 2025-11-04
+
+### Added
+
+* Attachment functionality
+* WIP OLED and animated theme
+
+### Changed
+
+* Difficulties are now Units
+* WIP content for Lesson 1, awaiting more email functionality
+* Export file includes username
+* Navigation image is centered on mobile
+
+### Removed
+
+* Concept file to the prototype repository
+* Button scale transform on hover
+
 ## [0.3.2] - 2025-10-31
 
 ### Added

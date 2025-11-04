@@ -192,3 +192,63 @@ See LICENSE-CODE in the project root for details.
 .theme-monochrome img {
     filter: saturate(0);
 }
+
+
+
+
+
+
+
+
+.theme-memphis {
+    /* Website */
+    --primary-color: #F9BB1E;
+    --text-color: #f0f0f0;
+    --background-color: #010204;
+    --background-image: url('../external_assets/6916579_Motion_Graphics_Motion_Graphic_1920x1080.gif');
+    --font: Figtree;
+
+    /* Website Supplements */
+    --primary-color-transparent: rgba(249, 187, 30, 0.2);
+    --button-inside-shadow: rgba(0,0,0,0.3);
+    --bar-background: #000000;
+    --glass: rgba(255,255,255,0.3);
+
+    /* Email */
+    --email-text-color: #000000;
+    --email-info-color: #555;
+    --link-text-color: #007bff;
+    --email-background-color: #ffffff;
+
+    /* Email Supplements */
+    --email-shadow: rgba(0,0,0,1); /* Shadow outside of email */
+}
+
+
+
+
+
+
+.theme-midnight {
+    /* Website */
+    --primary-color: #F9BB1E;
+    --text-color: #f0f0f0;
+    --background-color: #000000;
+    --background-image: none;
+    --font: Figtree;
+
+    /* Website Supplements */
+    --primary-color-transparent: rgba(249, 187, 30, 0.2);
+    --button-inside-shadow: rgba(0,0,0,0.3);
+    --bar-background: #000000;
+    --glass: rgba(255,255,255,0.3);
+
+    /* Email */
+    --email-text-color: #000000;
+    --email-info-color: #555;
+    --link-text-color: #007bff;
+    --email-background-color: #ffffff;
+
+    /* Email Supplements */
+    --email-shadow: rgba(0,0,0,1); /* Shadow outside of email */
+}

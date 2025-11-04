@@ -96,6 +96,51 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector("#email-info p:nth-child(2)").textContent =
                 lessonData.senderEmail;
             document.querySelector("#email-content p").innerHTML = lessonData.body;
+
+
+
+            const attachmentsContainer = document.getElementById("email-attachments");
+            attachmentsContainer.innerHTML = "";
+
+            if (lessonData.attachments && lessonData.attachments.length > 0) {
+                lessonData.attachments.forEach(file => {
+                    const iconMap = {
+                        pdf: "fa-file-pdf",
+                        word: "fa-file-word",
+                        doc: "fa-file-word",
+                        docx: "fa-file-word",
+                        excel: "fa-file-excel",
+                        xls: "fa-file-excel",
+                        xlsx: "fa-file-excel",
+                        zip: "fa-file-zipper",
+                        rar: "fa-file-zipper",
+                        jpg: "fa-file-image",
+                        jpeg: "fa-file-image",
+                        png: "fa-file-image",
+                        gif: "fa-file-image"
+                    };
+
+                    const iconClass = iconMap[file.type.toLowerCase()] || "fa-file";
+
+                    const tile = document.createElement("div");
+                    tile.classList.add("attachment-tile");
+
+                    tile.innerHTML = `
+                        <i class="fa-solid ${iconClass}"></i>
+                        <div class="attachment-text">
+                            <p class="attachment-name">${file.name}</p>
+                            <p class="attachment-size">${file.size || ""}</p>
+                        </div>
+                    `;
+
+                    attachmentsContainer.appendChild(tile);
+                });
+            } else {
+                attachmentsContainer.style.display = "none";
+            }
+
+
+
             document.getElementById("lesson-number").textContent =
                 lessonData.lessonNumber || "";
             document.getElementById("lesson-title").textContent =

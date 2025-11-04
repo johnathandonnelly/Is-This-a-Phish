@@ -90,13 +90,15 @@ For detailed changes, visit [Releases](https://github.com/johnathandonnelly/Is-T
 
 For future updates, I'll focus on the items below:
 
-* Improved and narrative-driven lessons
 * Improved UI and accessibility
+* Improved and narrative-driven lessons
+* Support for different screen sizes
 * Support for other languages
 * Support for local installation
-* Functionality for attachments
+* Functionality for attachments and links
 * New random challenge mode
 * New custom colour themes
+* New separate real life scenarios
 
 ## 🙋 FAQ
 

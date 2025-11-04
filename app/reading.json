@@ -8,8 +8,12 @@
             "senderName": "Sender Name",
             "senderEmail": "Sender Email",
             "body": "kindly check the attached LOVELETTER coming from me.",
-            
-            "lessonDescription": "Description of the lesson.",
+
+            "attachments": [
+                { "type": "pdf", "name": "Invoice_11_2025.pdf", "size": "154 KB"}
+            ],
+
+            "readingDescription": "Description of the lesson.",
             "correctAnswer": "complete",
             "prerequisite": "",
             "next": "R2"
@@ -23,7 +27,7 @@
             "senderEmail": "EMAIL OF SENDER",
             "body": "THE BODY OF THE EMAIL",
             
-            "lessonDescription": "description for reading 2 description.",
+            "readingDescription": "description for reading 2 description.",
             "correctAnswer": "complete",
             "prerequisite": "R1",
             "next": ""

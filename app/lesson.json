@@ -1,18 +1,22 @@
 {
-    "tutorial": [
+    "anatomy-of-an-email": [
         {
-            "id": "T1",
-            "lessonNumber": "Tutorial - 1",
-            "lessonTitle": "What Is Phishing? (1)",
+            "id": "L1",
+            "lessonNumber": "Lesson 1-1",
+            "lessonTitle": "Email Components",
 
-            "title": "Congraduations!",
-            "senderName": "Raffle Rewards",
-            "senderEmail": "<rewards@svdslms.com>",
-            "body": "You've have won a $100 gift card!<br><br><span class=\"email-link\">Claim Here</span>",
-            
-            "userDescription": "A new student just entering university.",
-            "companyDescription": "A generic company.",
-            "lessonDescription": "Phishing is a type of cyber attack where attackers attempt to trick individuals into providing sensitive information or clicking on malicious links.<br><br>Source: <a class=\"link\" href=\"https://google.com\" target=\"_blank\">Google</a>",
+            "title": "Email Title",
+            "senderName": "Sender Name",
+            "senderEmail": "<sender.email@domain.com>",
+            "body": "This is the body of the email.<br><br><span class=\"email-link\">Link</span>",
+
+            "attachments": [
+                { "type": "pdf", "name": "Sample_Document.pdf", "size": "29.7 KB"}
+            ],
+
+            "userDescription": "",
+            "companyDescription": "",
+            "lessonDescription": "This section would be for explaining the various components of the email.<br><br>Source: <a class=\"link\" href=\"https://google.com\" target=\"_blank\">Not a Source</a>",
             
             "correctAnswer": "Legit",
             "hint": "1st hint",

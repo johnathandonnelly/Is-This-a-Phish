@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const importInput = document.getElementById("import-file-input");
 
     clearBtn.addEventListener("click", () => {
-        if (confirm("Are you sure you want to clear all saved progress?\nThis will delete all of your unexported profile information.")) {
+        if (confirm("This will clear all saved progress.\nAre you sure you want to continue?")) {
             localStorage.clear();
             alert("All saved progress has been cleared.");
             location.reload();
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = "IsThisaPhish-profile.json";
+        a.download = `IsThisaPhish-${username}.json`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function setTheme(theme) {
-        document.documentElement.classList.remove("theme-default", "theme-dark", "theme-ocean", "theme-light", "theme-halloween", "theme-monochrome");
+        document.documentElement.classList.remove("theme-default", "theme-dark", "theme-ocean", "theme-light", "theme-halloween", "theme-monochrome", "theme-memphis", "theme-midnight");
         document.documentElement.classList.add(`theme-${theme}`);
         themeButtons.forEach(btn => {
             btn.classList.toggle("active", btn.getAttribute("data-theme") === theme);

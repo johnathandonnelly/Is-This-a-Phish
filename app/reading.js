@@ -82,6 +82,51 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector("#reading-email-info p:nth-child(1)").textContent = readingData.senderName;
             document.querySelector("#reading-email-info p:nth-child(2)").textContent = readingData.senderEmail;
             document.querySelector("#reading-email-content p").innerHTML = readingData.body;
+
+
+
+            const attachmentsContainer = document.getElementById("reading-email-attachments");
+            attachmentsContainer.innerHTML = "";
+
+            if (readingData.attachments && readingData.attachments.length > 0) {
+                readingData.attachments.forEach(file => {
+                    const iconMap = {
+                        pdf: "fa-file-pdf",
+                        word: "fa-file-word",
+                        doc: "fa-file-word",
+                        docx: "fa-file-word",
+                        excel: "fa-file-excel",
+                        xls: "fa-file-excel",
+                        xlsx: "fa-file-excel",
+                        zip: "fa-file-zipper",
+                        rar: "fa-file-zipper",
+                        jpg: "fa-file-image",
+                        jpeg: "fa-file-image",
+                        png: "fa-file-image",
+                        gif: "fa-file-image"
+                    };
+
+                    const iconClass = iconMap[file.type.toLowerCase()] || "fa-file";
+
+                    const tile = document.createElement("div");
+                    tile.classList.add("reading-attachment-tile");
+
+                    tile.innerHTML = `
+                        <i class="fa-solid ${iconClass}"></i>
+                        <div class="reading-attachment-text">
+                            <p class="reading-attachment-name">${file.name}</p>
+                            <p class="reading-attachment-size">${file.size || ""}</p>
+                        </div>
+                    `;
+
+                    attachmentsContainer.appendChild(tile);
+                });
+            } else {
+                attachmentsContainer.style.display = "none";
+            }
+
+
+
             document.getElementById("reading-title").textContent = readingData.readingTitle || "";
             document.getElementById("reading-description").innerHTML = readingData.readingDescription || "";
 

@@ -1,1 +1,6 @@
-{"username":"Custom Username","theme":"dark","completedLessons":["T1"],"completedReadings":["R1","R2"]}
+{
+    "username":"Test Profile",
+    "theme":"dark",
+    "completedLessons":["L1"],
+    "completedReadings":["R1","R2"]
+}
